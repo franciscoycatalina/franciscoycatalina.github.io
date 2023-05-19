@@ -8,7 +8,7 @@ window.addEventListener("load", function() {
 
 var parametrosURL = new URLSearchParams(window.location.search);
 var valor = parametrosURL.get("invitado");
-if(valor != null){
+if(valor){
     $(".name-invited").fadeOut(1000, function() {
         $(this).html("<br>Y nos encantaría que nos acompañaras<br>" + valor).fadeIn(1000);
       });
