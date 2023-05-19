@@ -10,7 +10,7 @@ var parametrosURL = new URLSearchParams(window.location.search);
 var valor = parametrosURL.get("invitado");
 if(valor){
     $(".name-invited").fadeOut(1000, function() {
-        $(this).html("<br>Y nos encantaría que nos acompañaras<br>" + valor).fadeIn(1000);
+        $(this).html("<br>Y nos encantaría que nos acompañaras<br><strong>" + valor+"</strong>").fadeIn(1000);
       });
 }
 
