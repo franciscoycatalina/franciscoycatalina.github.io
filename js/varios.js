@@ -8,6 +8,9 @@ window.addEventListener("load", function() {
 
 var parametrosURL = new URLSearchParams(window.location.search);
 var valor = parametrosURL.get("invitado");
-$(".name-invited").fadeOut(1000, function() {
-    $(this).html("<br>Y nos encantaría que nos acompañaras<br>" + valor).fadeIn(1000);
-  });
+if(valor != null){
+    $(".name-invited").fadeOut(1000, function() {
+        $(this).html("<br>Y nos encantaría que nos acompañaras<br>" + valor).fadeIn(1000);
+      });
+}
+
