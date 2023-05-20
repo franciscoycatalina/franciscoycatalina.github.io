@@ -12,9 +12,11 @@ $(".nsc").fadeOut(2000, function() {
 
 var parametrosURL = new URLSearchParams(window.location.search);
 
-var valor = atob(parametrosURL.get("invitado"));
+var valor = parametrosURL.get("invitado")
 
 if(valor){
+
+    valor = atob(valor);
     $(".name-invited").fadeOut(4500, function() {
         $(this).html("<br>Y nos encantaría que nos acompañaras<br><strong>" + valor+"</strong> el próximo 30 de septiembre").fadeIn(2500);
     });
