@@ -13,7 +13,7 @@ window.addEventListener("load", function() {
 });
 
 $(".nsc").fadeOut(2000, function() {
-    $(this).html("¡Nos casamos!").fadeIn(1000);
+    $(this).html("🎉¡Nos casamos!🎉").fadeIn(1000);
 });
 
 var parametrosURL = new URLSearchParams(window.location.search);
