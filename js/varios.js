@@ -6,7 +6,7 @@ window.addEventListener("load", function() {
     loader.style.display = "none";
     contenido.style.display = "block";
 
-    //updateJson();
+    updateJson();
 
 
 
@@ -23,8 +23,8 @@ var valor = parametrosURL.get("invitado")
 if(valor){
 
     valor = atob(valor);
-    $(".name-invited").fadeOut(4500, function() {
-        $(this).html("<br>Y nos encantaría que nos acompañaras en este día especial <strong>" + valor+"</strong>.<br><br><strong>30/09/23</strong>").fadeIn(2500);
+    $(".name-invited").fadeOut(5000, function() {
+        $(this).html("<br>Y nos encantaría que nos acompañaran en este día especial <strong>" + valor+"</strong>.<br><br><strong>30/09/23</strong>").fadeIn(2500);
     });
 
     $(".only-name").html("<strong>" +valor.charAt(0).toUpperCase() + valor.slice(1)+"</strong>");
