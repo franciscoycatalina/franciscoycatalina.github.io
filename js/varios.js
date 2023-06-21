@@ -6,7 +6,7 @@ window.addEventListener("load", function() {
     loader.style.display = "none";
     contenido.style.display = "block";
 
-    updateJson();
+    //updateJson();
 
 
 
